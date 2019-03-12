@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <!--New Registration Form Markup-->
+
+    <section id="form-page">
+        <div class="white_cover">
+            <div class="cover-demo">
+                <h3>USER REGISTRATION FORM</h3>
+            </div>
+            
+
+            <div class="container main_form_cover">
+                <div class="colored-cover">
+                    <div class="input-holder">
+                        <form action="validate.php" method="POST">
+                            <div class="row style-holder">
+                                <div class="col-4">
+                                    Username
+                                </div>
+                                <div class="col-8 inputs">
+                                    <input type="text" name="username">
+                                </div>
+                            </div>
+                            <div class="row style-holder">
+                                <div class="col-4">
+                                    First Name
+                                </div>
+                                <div class="col-8 inputs">
+                                    <input type="text" name="firstname">
+                                </div>
+                            </div>
+                            <div class="row style-holder">
+                                <div class="col-4">
+                                    Last Name
+                                </div>
+                                <div class="col-8 inputs">
+                                    <input type="text" name="lastname">
+                                </div>
+                            </div>
+                            <div class="row style-holder">
+                                <div class="col-4">
+                                    Password
+                                </div>
+                                <div class="col-8 inputs">
+                                    <input type="password" name="password">
+                                </div>
+                            </div>
+                            <div class="row style-holder">
+                                <div class="col-4">
+                                    Confirm Password
+                                </div>
+                                <div class="col-8 inputs">
+                                    <input type="password" name="confirmPassword">
+                                </div>
+                            </div>
+                            <div class="row style-holder">
+                                <div class="col-4">
+                                    Email
+                                </div>
+                                <div class="col-8 inputs">
+                                    <input type="text" name="email">
+                                </div>
+                            </div>
+                            <div class="row style-holder">
+                                <div class="col-4">
+                                    Gender
+                                </div>
+                                <div class="col-8">
+                                    <input type="radio" value="male" name="gender"> Male
+                                    <input type="radio" value="female" name="gender"> Female
+                                </div>
+                            </div>
+                            <input type="checkbox" name="checkbox" value="checkbox" class="ml-3"> <span class="accept">I accept Terms and Conditions</span> 
+                            <button type="submit" name="submit" class="ml-2" id="butt">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
