@@ -92,9 +92,9 @@ if(!isset($gender)){
 if(!$errors){
 
     $servername = "localhost";
-    $username = "username";
+    $username = "root";
     $password = "root";
-    $dbname = "root";
+    $dbname = "myDatabase";
 
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -103,9 +103,9 @@ if(!$errors){
 
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql = "INSERT INTO myDatabase (username, firstname, lastname, password1, password2, email, gender)
+        $sql = "INSERT INTO Users (username, firstname, lastname, password1, password2, email, gender)
 
-        VALUES ($userName, $firstName, $lastName, $password, $confirmPassword, $email, $gender)";
+        VALUES ('$userName', '$firstName', '$lastName', '$password', '$confirmPassword', '$email', '$gender')";
         // use exec() because no results are returned
         $conn->exec($sql);
         echo "New record created successfully";
